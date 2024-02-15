@@ -72,7 +72,7 @@ function calculateMoney(ticketSale) {
   for(const item of arr){
   if(item >= 3000){
   let tax = item - (item*0.2);
-  sum = item + tax;
+  sum += tax;
   }
   else{
   sum += item;
@@ -85,4 +85,5 @@ function calculateMoney(ticketSale) {
   return totalSavings;
   }
 
+ 
    
